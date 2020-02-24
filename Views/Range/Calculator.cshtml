@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Trip Mileage Calculator";
+}
+
+<p id="page_title">&nbsp;</p>
+<p id="page_title">&nbsp;</p>
+<p id="page_title">&nbsp;</p>
+<h1 id="page_title">Calculator</h1>
+<p id="page_title">&nbsp;</p>
+
+
+
+
+<form action="../Range/Result" method="post" id="trip_result">
+
+    Miles Per Gallon<input type="number" name="mpg" />
+    Gas (in Gallons)<input type="number" name="gasGallons" />
+    Trip Distance<input type="number" name="tripDistance" />
+    <input type="submit" value="Calculate Trip" />
+
+</form>
+
+
+<a id="trip_result" class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Go Back to Home</a>

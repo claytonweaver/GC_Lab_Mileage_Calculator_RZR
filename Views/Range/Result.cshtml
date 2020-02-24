@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Result";
+}
+
+<p id="page_title">&nbsp;</p>
+<br />
+<br />
+<br />
+<h1 id="page_title">Result</h1>
+<p id="page_title">&nbsp;</p>
+
+
+@model Trip
+
+@{
+    if (Model.Message.Contains("didn't"))
+    {
+        <h2 id="trip_result"><span style="color: #ff0000;">@Model.Message</span></h2>
+    }
+    else
+    {
+        <h2 id="trip_result"><span style="color: #008000;">@Model.Message</span></h2>
+    }
+}
+
+
+
+<h3 id="trip_result">You made it for @Model.TripMiles miles and your trip was @Model.TripDistance miles.</h3>
+
+<a id="trip_result" class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Go Back To Home</a>
